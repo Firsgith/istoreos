@@ -1,5 +1,5 @@
-src-git packages https://github.com/jjm2473/packages.git;istoreos-24.10
-src-git luci https://github.com/Firsgith/luciistoreos.git;istoreos-24.10
+src-git packages https://github.com/Firsgith/packagesistoreos.git;newStrongwan
+src-git luci https://github.com/Firsgith/luciistoreos.git;newstrongswan
 src-git routing https://github.com/openwrt/routing.git;openwrt-24.10
 src-git telephony https://github.com/openwrt/telephony.git;openwrt-24.10
 # istore
