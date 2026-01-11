@@ -12,3 +12,4 @@ src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main
 src-git diskman https://github.com/jjm2473/luci-app-diskman.git;dev
 src-git oaf https://github.com/jjm2473/OpenAppFilter.git;dev7
 src-git jjm2473_apps https://github.com/jjm2473/openwrt-apps.git;main
+src-git openwrtrkmpp https://github.com/Firsgith/openwrt-rkmpp.git
