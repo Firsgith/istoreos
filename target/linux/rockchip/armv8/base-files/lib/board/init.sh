@@ -313,6 +313,7 @@ board_set_iface_smp_affinity() {
 		;;
 	armsom,sige7|\
 	armsom,sige7-v1|\
+	radxa,rock-5t|\
 	xunlong,orangepi-5-plus|\
 	cyber,cyber3588-aib)
 		if ethtool -i eth0 | grep -Fq 'driver: r8169'; then
@@ -389,7 +390,7 @@ board_set_iface_smp_affinity() {
 			set_iface_cpumask 5 eth1 eth1-0 a
 		fi
 		;;
-	easepi,r2|\
+	easepi,a2|\
 	ynn,nas|\
 	le,hes30|\
 	jp,tvbox|\
