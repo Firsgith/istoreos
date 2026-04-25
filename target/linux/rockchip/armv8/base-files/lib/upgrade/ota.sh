@@ -11,6 +11,7 @@ export_ota_url() {
 		export -n OTA_URL_BASE="https://fw0.koolcenter.com/iStoreOS/${board##*-}"
 		;;
 	hlink,h28k|\
+	linkease,easepi-r2|\
 	linkfog,ala2|\
 	radxa,e20c|\
 	radxa,e24c|\
@@ -19,6 +20,9 @@ export_ota_url() {
 	easepi,ars4|\
 	lyt,t68m)
 		export -n OTA_URL_BASE="https://fw0.koolcenter.com/iStoreOS/${board##*,}"
+		;;
+	easepi,a2)
+		export -n OTA_URL_BASE="https://fw0.koolcenter.com/iStoreOS/easepi-a2"
 		;;
 	easepi,r1)
 		export -n OTA_URL_BASE="https://fw0.koolcenter.com/iStoreOS/easepi-r1"

@@ -82,7 +82,7 @@ $(call Device/Legacy/rk3568,$(1))
   DEVICE_VENDOR := EasePi
   DEVICE_MODEL := A2
   DEVICE_DTS := rk3568/rk3568-easepi-a2
-  DEVICE_PACKAGES += kmod-r8169 kmod-nvme kmod-brcmfmac brcmfmac-firmware-43455-sdio brcmfmac-nvram-43455-sdio-generic
+  DEVICE_PACKAGES += kmod-r8169 kmod-nvme kmod-brcmfmac cypress-firmware-43455-sdio brcmfmac-nvram-43455-sdio-generic
 endef
 TARGET_DEVICES += easepi_a2
 
@@ -224,6 +224,16 @@ $(call Device/Legacy/rk3588,$(1))
   SOC := rk3588s
   DEVICE_DTS = rk3588/$$(SOC)-$(lastword $(subst _, ,$(1)))
 endef
+
+define Device/easepi_r2
+$(call Device/Legacy/rk3588,$(1))
+  DEVICE_VENDOR := EasePi
+  DEVICE_MODEL := R2
+  DEVICE_DTS := rk3588/rk3588-easepi-r2
+  SUPPORTED_DEVICES += linkease,easepi-r2
+  DEVICE_PACKAGES += kmod-r8169 kmod-nvme kmod-thermal kmod-brcmfmac cypress-firmware-43455-sdio brcmfmac-nvram-43455-sdio-generic
+endef
+TARGET_DEVICES += easepi_r2
 
 define Device/friendlyarm_nanopi-r6s
 $(call Device/Legacy/rk3588s,$(1))
